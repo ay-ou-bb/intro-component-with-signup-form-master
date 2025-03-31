@@ -5,17 +5,108 @@
 }
 
 body{
+    font-family: "Poppins", sans-serif;;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100vh;
+    Font-size: 16px;
 }
 
 main{
     width: 80%;
-    background-color: rgb(218, 167, 167);
+    height: 500px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    background-image: url('./images/bg-intro-desktop.png');
+    background-color:  hsl(0, 100%, 74%);
+}
+
+.introdu{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 90px;
+    
+}
+
+.intro-h1{
+    width: 70%;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.intro-P{
+    width:80%;
+    color: white;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+/* signup side */
+
+.signup-side{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-promo{
+  box-shadow: 2px 2px 7px hsl(249, 10%, 26%) ; 
+  background-color: hsl(248, 32%, 49%); 
+  color: white;
+  padding: 10px 10px;
+  font-size: 12px;
+  margin-bottom: 15px;
+  width: 75%;
+  text-align: center;
+}
+
+.card-promo span{
+    color: hsl(246, 25%, 77%);
+}
+
+.signup-form{
+    background-color: white;
+    width: 75%;
+    border-radius: 5px;
+    box-shadow: 0 4px 1px rgb(119, 118, 118);
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    padding: 15px;  
+}
+
+input{
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid rgb(197, 192, 192);
+    border-radius: 5px;
+}
+
+button{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    color: white;
+    box-shadow: 0 4px 0px rgb(87, 184, 111);
+}
+.signup-form p{
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: hsl(246, 25%, 77%);
+}
+
+.signup-form span{
+    color: hsl(0, 100%, 74%);
+    font-weight: 500;
 }
 
 
